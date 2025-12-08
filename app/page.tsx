@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { GithubSVG, LinkedinSVG, TwitterSVG } from "./SVGs";
 
 export default function Home() {
   const [progress, setProgress] = useState(0);
@@ -62,6 +63,36 @@ export default function Home() {
           </div>
         </div>
       </main>
+
+      {/* Footer */}
+      <footer className="flex justify-center mt-auto py-8 text-center">
+        <div className="flex justify-center ml-4 gap-4">
+          <a
+            href="https://github.com/maimunar"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="h-6 w-6 text-zinc-400 transition-colors hover:text-white"
+          >
+            <GithubSVG />
+          </a>
+          <a
+            href="https://linkedin.com/in/aleksandar-ivanov-1a35981a1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="h-6 w-6 text-zinc-400 transition-colors hover:text-white"
+          >
+            <LinkedinSVG />
+          </a>
+          <a
+            href="https://x.com/Maimunar"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="h-6 w-6 text-zinc-400 transition-colors hover:text-white"
+          >
+            <TwitterSVG />
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
