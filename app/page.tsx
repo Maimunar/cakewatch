@@ -26,7 +26,7 @@ export default function Home() {
     fetchProgress();
   }, []);
 
-  const percentage = total > 0 ? Math.round((progress / total) * 100) : 0;
+  const percentage = total > 0 ? Math.round((progress / total) * 1000) / 10 : 0;
 
   return (
     <div className="flex min-h-screen flex-col bg-gradient-to-b from-zinc-900 to-black px-4">
