@@ -9,7 +9,7 @@ interface CakewatchData {
 
 export async function GET() {
   const result = await redis.get<CakewatchData>("cakewatch");
-  console.log(result);
+
   const total = Number(result?.total);
   const progress = Number(result?.progress);
 
