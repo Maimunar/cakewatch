@@ -32,7 +32,7 @@ export default function Home() {
     <div className="flex min-h-screen flex-col bg-gradient-to-b from-zinc-900 to-black px-4">
       {/* Title at the top */}
       <header className="pt-12 text-center">
-        <h1 className="bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400 bg-clip-text text-7xl font-extrabold tracking-tight text-transparent drop-shadow-lg">
+        <h1 className="bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400 bg-clip-text text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-transparent drop-shadow-lg">
           Cakewatch
         </h1>
       </header>
