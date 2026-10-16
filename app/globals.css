@@ -9,6 +9,13 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-poppins);
+  --animate-fill: fill 1s ease-out;
+
+  @keyframes fill {
+    from {
+      width: 0;
+    }
+  }
 }
 
 @media (prefers-color-scheme: dark) {
